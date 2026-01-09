@@ -5,6 +5,7 @@ import { Input } from "@/components/ui/input";
 import { ChatMessage } from "./ChatMessage";
 import { TypingIndicator } from "./TypingIndicator";
 import { toast } from "@/components/ui/use-toast";
+import nyayikaiLogo from "@/assets/navikailogo.png";
 
 interface Message {
   id: string;
@@ -169,9 +170,11 @@ export const ChatInterface = ({ isFullPage = false }: ChatInterfaceProps) => {
     <div className={`flex flex-col ${isFullPage ? "h-full" : "h-[500px]"}`}>
       <div className="flex items-center justify-between p-4 border-b border-border/30">
         <div className="flex items-center gap-3">
-          <div className="w-10 h-10 rounded-full bg-accent/20 flex items-center justify-center">
-            <span className="text-lg font-bold text-accent">N</span>
-          </div>
+          <img
+            src={nyayikaiLogo}
+            alt="NyayikAI"
+            className="w-10 h-10 object-contain"
+          />
           <div>
             <h3 className="font-semibold text-foreground">NyayikAI</h3>
             <p className="text-xs text-muted-foreground">Legal Assistant</p>

@@ -76,7 +76,9 @@ const Index = () => {
                   </Link>
                 </Button>
                 <Button variant="heroOutline" size="xl" asChild>
-                  <Link to="/blog">Explore Legal Prudent Blog</Link>
+                  <a href="https://wa.me/919608762166?text=Hi%20I%20am%20contacting%20through%20Website,%20Need%20your%20legal%20Help.">
+                    Join Now
+                  </a>
                 </Button>
               </div>
             </AnimatedSection>

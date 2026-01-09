@@ -1,6 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
 import { useState } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Bot } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import logo from "@/assets/logo.png";
@@ -58,9 +58,11 @@ const Navigation = () => {
 
           {/* Desktop CTA */}
           <div className="hidden lg:block">
-            <Button variant="hero" size="sm" asChild>
-              <Link to="https://wa.me/919608762166?text=Hi%20I%20am%20contacting%20through%20Website,%20Need%20your%20legal%20Help.
-">Join Now</Link>
+            <Button variant="glow" size="sm" asChild className="gap-2">
+              <Link to="/nyayikai">
+                <Bot className="h-4 w-4" />
+                NyayikAI
+              </Link>
             </Button>
           </div>
 
@@ -94,8 +96,11 @@ const Navigation = () => {
                 </Link>
               ))}
               <div className="pt-4 px-4">
-                <Button variant="hero" className="w-full" asChild>
-                  <Link to="/join" onClick={() => setIsOpen(false)}>Join Now</Link>
+                <Button variant="glow" className="w-full gap-2" asChild>
+                  <Link to="/nyayikai" onClick={() => setIsOpen(false)}>
+                    <Bot className="h-4 w-4" />
+                    NyayikAI
+                  </Link>
                 </Button>
               </div>
             </div>

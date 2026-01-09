@@ -2,6 +2,7 @@ import AnimatedSection from "@/components/AnimatedSection";
 import { GlassCard } from "@/components/ui/glass-card";
 import { ChatInterface } from "@/components/chat/ChatInterface";
 import { Scale, Shield, Clock, MessageSquare } from "lucide-react";
+import nyayikaiLogo from "@/assets/navikailogo.png";
 
 const features = [
   {
@@ -36,6 +37,13 @@ const NyayikAI = () => {
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent/10 border border-accent/30 mb-6">
                 <MessageSquare className="h-4 w-4 text-accent" />
                 <span className="text-accent text-sm font-medium">AI Legal Assistant</span>
+              </div>
+              <div className="flex justify-center mb-6">
+                <img
+                  src={nyayikaiLogo}
+                  alt="NyayikAI"
+                  className="h-32 w-32 object-contain"
+                />
               </div>
               <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6">
                 NyayikAI
